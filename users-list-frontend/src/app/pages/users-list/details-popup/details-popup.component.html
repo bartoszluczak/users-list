@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Informacje o użytkowniku</h1>
+<div mat-dialog-content>
+  <h4>Imię i nazwisko:</h4>
+  <h5>{{ userData.name }}</h5>
+  <h4>Nazwa użytkownika:</h4>
+  <h5>{{ userData.username }}</h5>
+  <h4>Adres email:</h4>
+  <h5>{{ userData.email }}</h5>
+  <h4>Adres:</h4>
+  <h5>{{ userData.address.street }}, {{ userData.address.suite }}, {{ userData.address.city }}
+    {{ userData.address.zipcode }}</h5>
+  <h4>Telefon</h4>
+  <h5>{{ userData.phone }}</h5>
+  <h4>Adress www</h4>
+  <h5>{{ userData.website }}</h5>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close class="mat-flat-button mat-primary" matDialogClose>Zamknij okno</button>
+</div>
